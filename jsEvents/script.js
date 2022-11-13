@@ -1,0 +1,189 @@
+let row1 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern1 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= row1; n++) {
+   // inner loop runs for n
+   for (let num = 1; num <= n; num++) {
+      pattern1 += num;
+   }
+
+   // Add a new line character after contents of each line
+   pattern1 += "<br>";
+}
+document.write(pattern1 +'<br>');
+
+
+
+let row2 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern2 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= row2; n++) {
+   for (let num = 1; num <= n; num++) {
+      pattern2 += n;
+   }
+
+   // Add a new line character after contents of each line
+   pattern2 += "<br>";
+}
+document.write(pattern2 +'<br>');
+
+
+
+let rows3 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern3 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= rows3; n++) {
+   for (let num = 1; num <= 6 - n; num++) {
+      pattern3 += num;
+   }
+   pattern3 += "<br>";
+}
+document.write(pattern3 +'<br>');
+
+
+
+
+
+
+
+
+
+
+
+let row4 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern4 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= row4; n++) {
+   // Inner loop - I -> prints spaces
+   for (let space1 = 1; space1 <= row4 - n; space1++) {
+      pattern4 += " ";
+   }
+
+   // Inner Loop - II -> prints stars
+   for (let num = 1; num <= n; num++) {
+      pattern4 += "*";
+   }
+   pattern4 += "<br>";
+}
+document.write(pattern4 +'<br>');
+
+
+
+
+let rows5 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern5 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= rows5; n++) {
+   for (let num = rows5; num >= n; num--) {
+      pattern5 += num;
+   }
+   pattern5 += "<br>";
+}
+document.write(pattern5 +'<br>');
+
+
+
+let rows6 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern6 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= rows6; n++) {
+   // print 6-n stars
+   for (let num = 6 - n; num >= 1; num--) {
+      pattern6 += num;
+   }
+   pattern6 += "<br>";
+}
+document.write(pattern6 +'<br>');
+
+
+
+let rows7 = 5;
+
+// variable contains the next element of the pattern
+let variable = 1;
+
+// pattern variable carries the final pattern in string format
+let pattern7 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= rows7; n++) {
+   for (let num = 1; num <= n; num++) {
+      pattern7 += variable+" ";
+      variable++;
+   }
+   pattern7 += "<br>";
+}
+document.write(pattern7 +'<br>');
+
+
+
+let rows8 = 5;
+let variable1 = 15;
+// pattern variable carries the final pattern in string format
+let pattern8 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= rows8; n++) {
+   // print 6-n stars
+   for (let num = 6 - n; num >= 1; num--) {
+      pattern8 += variable1+" ";
+      variable1--;
+   }
+   pattern8 += "<br>";
+}
+document.write(pattern8 +'<br>');
+
+
+
+
+
+let row9 = 5;
+
+// pattern variable carries the final pattern in string format
+let pattern9 = "";
+
+// outer loop runs for `rows` no. of times
+for (let n = 1; n <= row9; n++) {
+   // Inner loop - I -> prints spaces
+   for (let space1 = 1; space1 <= row9 - n; space1++) {
+      pattern9 += "";
+   }
+
+   // Inner Loop - II -> prints stars
+   for (let num = 1; num <= n; num++) {
+      if (num%2==1)
+       {
+            pattern9 += "@";
+         }else {
+            pattern9 += "#";
+         }
+      
+   }
+ 
+   pattern9 += "<br>";
+}
+document.write(pattern9 +'<br>');
+
+
+console.log()
+
+
+

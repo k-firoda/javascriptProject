@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color change</title>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+       
+        <textarea name="the-textarea" id="the-textarea" cols="40" rows="10" maxlength="100" placeholder="Start Typin..." autofocus></textarea>
+        <p id="rem" style="color: grey;">100</p>
+      </div>
+ 
+    <script>
+        
+
+
+        let  textarea = document.querySelector("textarea");
+
+        textarea.addEventListener("input", event => {
+            let target = event.currentTarget;
+            let maxLength = target.getAttribute("maxlength");
+            let currentLength = target.value.length;
+            document.getElementById('rem').innerHTML= maxLength - currentLength;
+
+            if (currentLength >70) {
+                target.style.color='red'
+            }
+            if (currentLength >= maxLength) {
+        return document.write("You have reached the maximum number of characters.");
+    }
+            
+            
+        });
+    
+        
+
+    </script>
+    
+</body>
+</html>

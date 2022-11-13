@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <input type="number" name="" id="value1">
+    <input type="number" name="" id="value2">
+    <select name="" id="" onchange="">
+        <option value="add" onchange="add()">add</option>
+        <option value="multiplication" onchange="multi()">multiplication</option>
+        <option value="substraction" onchange="sub()">substraction</option>
+        <option value="divide" onchange="div()">divide</option>
+    </select>
+    
+        <button value="add" onclick="add()">add</button>
+        <button value="multiplication" onclick="multi()">multiplication</button>
+        <button value="substraction" onclick="sub()">substraction</button>
+        <button value="divide" onclick="div()">divide</button>
+       
+        <p id="message"></p>
+    
+
+
+
+        
+        
+        <script>
+        
+            function add() {
+                let input2 = parseInt(document.getElementById("value2").value);
+                let input1 = parseInt(document.getElementById("value1").value);
+                let addition =  parseInt(input1)+ parseInt(input2);
+                document.getElementById("message").innerHTML = `Addition of ${input1} and ${input2} is ${addition}`
+            }
+
+
+            function multi() {
+                let input2 = parseInt(document.getElementById("value2").value);
+                let input1 = parseInt(document.getElementById("value1").value);
+                let multi =  input1* input2;
+                document.getElementById("message").innerHTML = `Multiplication of ${input1} and ${input2} is ${multi}`
+            }
+
+            function sub() {
+                let input2 = parseInt(document.getElementById("value2").value);
+                let input1 = parseInt(document.getElementById("value1").value);
+                let sub =  input1-input2;
+                document.getElementById("message").innerHTML = `Substraction of ${input1} and ${input2} is ${sub}`
+            }
+            function div() {
+                let input2 = parseInt(document.getElementById("value2").value);
+                let input1 = parseInt(document.getElementById("value1").value);
+                let div =  input1/input2;
+                document.getElementById("message").innerHTML = `Division of ${input1} and ${input2} is ${div}`
+            }
+
+
+
+        </script>
+</body>
+</html>

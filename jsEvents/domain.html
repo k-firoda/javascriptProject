@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        domain
+    </title>
+</head>
+<body >
+    <form id="myforms">
+        <input type="text" id="text_id" >
+    </form>
+    <br><br>
+    <button onclick="myGeeks()">Click Here!</button>
+    <p id="GFG" style="font-size:20px;"></p>
+     
+    <!-- script to return the pattern Property-->
+    <script>
+        function myGeeks() {
+            var txt = document.getElementById("text_id").value;
+            var parts = txt.split(/[\\@#$-/:-?{-~!"^_`\[\]]/);
+            document.getElementById("GFG").innerHTML = "" + parts[1];
+        }
+    </script>
+</body>
+</html>
