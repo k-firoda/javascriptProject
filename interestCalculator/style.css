@@ -1,0 +1,26 @@
+body {background-color:rgb(103, 55, 11);
+    font-family:arial;
+    color:white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+h1{color:grey;font-family:verdana}
+.maindiv{
+    background-color:rgb(251, 243, 243);
+    position: absolute;
+    top: 20%;
+    color:black;
+    width:60vw;
+    padding:20px;
+    border-radius:25px;
+    align-items: center;
+}
+button{
+    padding: 0.3rem;
+    background-color: rgb(4, 61, 4);
+    color: aliceblue;
+}
