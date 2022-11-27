@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin : 2rem 0.3rem 2rem 2rem;
+        }
+        p{
+            margin: 2rem 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="radio">
+        <input type="radio" name="radio" id="r1" onclick="enableTxtBox1()">1
+        <input type="radio" name="radio" id="r2" onclick="enableTxtBox1()">3
+        <input type="radio" name="radio" id="r3" onclick="enableTxtBox1()">6
+        <input type="radio" name="radio" id="r4" onclick="enableTxtBox1()">10
+        <div class="para">
+            <p class="r10 r6 r3 r1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas atque <br>tempora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 r6 r3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas atque temp<br>ora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 r6 r3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas atque temp<br>ora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 r6 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas atque temp<br>ora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 r6 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas atque temp<br>ora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 r6 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas atque temp<br>ora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas <br>atque tempora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Place</p>
+            <p class="r10 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas<br> atque tempora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas<br> atque tempora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+            <p class="r10 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel debitis obcaecati hic, rem, soluta modi eum doloremque ipsa porro, quas<br> atque tempora sapiente repellat expedita suscipit veniam? Ducimus, velit et.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Plac?</p>
+        </div>
+    </div>
+    <script>
+        
+        // var colorChanger = document.getElementsByTagName("button")[0];
+        // colorChanger.addEventListener("click",function() {
+        // let allP = document.querySelectorAll('p');
+        // for(let i=0; i<allP.length; i++)
+        //  {
+        //     allP[i].style.color = "blue"; 
+        //  }
+        //     });
+
+        function enableTxtBox1()
+        {
+            if (document.getElementById("r1").checked)
+            {
+                document.querySelector(".r1").style.color = 'red';
+            }
+            else if (document.getElementById("r2").checked)
+            {
+                let elem = document.querySelectorAll(".r3");
+                for (let i = 0;i < elem.length; i++){
+                elem[i].style.color = "red"
+                // document.querySelector(".r3").style.color = 'red';
+            }
+            }
+            else if (document.getElementById("r3").checked)
+            {     
+                let elem1 = document.querySelectorAll(".r6");
+                for (let i = 0;i < elem1.length; i++){
+                elem1[i].style.color = "red"}
+                // document.querySelector(".r6").style.color = 'red';
+            }
+            else if (document.getElementById("r4").checked)
+            {
+                let elem2 = document.querySelectorAll(".r10");
+                for (let i = 0;i < elem2.length; i++){
+                elem2[i].style.color = "red"}
+            } else {
+                let elem3 = document.querySelectorAll("p");
+                for (let i = 0;i < elem3.length; i++){
+                elem3[i].style.color = "black"}
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <input type="radio" name="r" id="radio1" checked="checked" onclick="enableTxtBox1()">cricket
+        <input type="radio" name="r" id="radio2" onclick="enableTxtBox1()">football
+        <input type="radio" name="r" id="radio3" onclick="enableTxtBox1()">basketball<br><br><br>
+        <input type="text" id="text1" disabled="disabled" placeholder="enter your text"><br><br>
+        <input type="text" id="text2" disabled="disabled" placeholder="enter your text"> <br><br>
+        <input type="text" id="text3" disabled="disabled" placeholder="enter your text">  <br><br>
+        <input type="text" id="text4" disabled="disabled" placeholder="enter your text">  <br><br>
+    </form>
+    <script>
+        function enableTxtBox1()
+        {
+            document.getElementById("text1").disabled = document.getElementById("radio1").checked;
+
+            document.getElementById("text2").disabled = document.getElementById("radio1").checked;
+            document.getElementById("text3").disabled = document.getElementById("radio1").checked;
+            document.getElementById("text4").disabled = document.getElementById("radio1").checked;
+
+        }
+
+        function enableTxtBox()
+        {
+            if (document.getElementById("radio1").checked)
+            {
+                document.getElementById("text1").disabled = true;
+                document.getElementById("text2").disabled = true;
+                document.getElementById("text3").disabled = true;
+                document.getElementById("text4").disabled = true;
+
+            }
+        }
+    </script>
+  
+</body>
+</html>
